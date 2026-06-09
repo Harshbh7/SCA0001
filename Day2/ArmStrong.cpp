@@ -1,5 +1,6 @@
-// find is armstrong number or not in simple way
+// find is armstrong number or not in simple way (use power function for more than 3 digit number)
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main() {
     int n, original, remainder, result = 0;
@@ -9,7 +10,7 @@ int main() {
 
     while (n != 0) {
         remainder = n % 10;
-        result += remainder * remainder * remainder;
+        result += pow(remainder, 3); 
         n /= 10;
     }
 
