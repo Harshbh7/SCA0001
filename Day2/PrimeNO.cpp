@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// prime number
 int main() {
     int n, i;
     bool isPrime = true;
