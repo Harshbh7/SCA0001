@@ -1,6 +1,4 @@
-// leetcode question 2461 Maximum Sum of Distinct Subarrays With Length K
-// input nums=[4,4,4], k=3 output=0
-// time limit 1000ms, memory limit 256mb
+
 #include <iostream>
 #include <vector>
 #include <unordered_set>
