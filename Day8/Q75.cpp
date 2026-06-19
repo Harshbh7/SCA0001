@@ -16,7 +16,7 @@ void sortColors(vector<int>& nums) {
         else if (nums[mid] == 1) {
             mid++;
         }
-        else { // nums[mid] == 2
+        else { 
             swap(nums[mid], nums[high]);
             high--;
         }
