@@ -1,3 +1,7 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
 class Solution {
 public:
     bool check(char ch) {
@@ -10,16 +14,31 @@ public:
         int r = s.size() - 1;
 
         while (l < r) {
-            if (!check(s[l]))
+            if (!check(s[l])) {
                 l++;
-            else if (!check(s[r]))
+            }
+            else if (!check(s[r])) {
                 r--;
+            }
             else {
                 swap(s[l], s[r]);
                 l++;
                 r--;
             }
         }
+
         return s;
     }
 };
+
+int main() {
+    Solution obj;
+
+    string s;
+    cout << "Enter a string: ";
+    getline(cin, s);
+
+    cout << "Output: " << obj.reverseVowels(s) << endl;
+
+    return 0;
+}
