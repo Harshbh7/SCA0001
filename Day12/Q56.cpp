@@ -46,10 +46,12 @@ int main() {
     Solution obj;
 
     vector<vector<int>> intervals = {
-        {1, 3},
-        {2, 6},
-        {8, 10},
-        {15, 18}
+        {1, 2},
+        {3, 5},
+        {6, 8},
+        {7, 10},
+        {9, 13},
+        {15, 19}
     };
 
     vector<vector<int>> ans = obj.merge(intervals);
