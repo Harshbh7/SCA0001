@@ -5,7 +5,6 @@ public:
 
     bool isSafe(vector<string>& board, int row, int col, int n)
     {
-
         for(int i = row; i >= 0; i--)
         {
             if(board[i][col] == 'Q')
