@@ -5,8 +5,6 @@ public:
         unordered_map<int,int> mp;
         stack<int> st;
 
-
-        // nums2 ka next greater calculate
         for(int i = nums2.size()-1; i >= 0; i--){
 
             while(!st.empty() && st.top() <= nums2[i]){
